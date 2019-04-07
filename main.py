@@ -3,7 +3,6 @@ import csv
 import tweepy
 from tweepy import OAuthHandler
 from textblob import TextBlob
-import pandas as pd
  
 class TwitterClient(object):
     '''
@@ -122,14 +121,10 @@ def main():
     with open('tweets.csv', 'w', newline='') as csvfile:
         filewriter = csv.writer(csvfile, delimiter=',', quotechar="'", escapechar='/', quoting=csv.QUOTE_ALL)
         for twt in tweets:
-            
             tweet_text = twt['text'].encode('utf-8')
             tweet_sentiment = twt['sentiment']
             topic = q
             filewriter.writerow(['{}'.format(topic), '{}'.format(tweet_text), '{}'.format(tweet_sentiment)])
-       
-    
-    
  
 if __name__ == "__main__":
     # calling main function
