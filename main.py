@@ -52,7 +52,7 @@ class TwitterClient(object):
         else:
             return 'negative'
  
-    def get_tweets(self, query, count = 10):
+    def get_tweets(self, query, count = 20):
         '''
         Main function to fetch tweets and parse them.
         '''
@@ -94,7 +94,7 @@ def main():
     api = TwitterClient()
     # calling function to get tweets
     q = str(input("Enter topic name: "))
-    tweets = api.get_tweets(query = q, count = 20) 
+    tweets = api.get_tweets(query = q, count = 800) 
  
     # picking positive tweets from tweets
     ptweets = [tweet for tweet in tweets if tweet['sentiment'] == 'positive']
