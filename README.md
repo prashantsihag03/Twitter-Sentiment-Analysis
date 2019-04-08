@@ -13,7 +13,7 @@ Sentiment Analysis is the process of ‘computationally’ determining whether a
   
 * **re**: Python has a built-in package called re, which can be used to work with Regular Expressions.
 
-* **csv**: CSV is a simple file format used to store tabular data, such as a spreadsheet or database. For working CSV files in python, there is an inbuilt module called csv
+* **csv**: Csv is a simple file format used to store tabular data, such as a spreadsheet or database. For working CSV files in python, there is an inbuilt module called csv
   
 ## Authentication:
 In order to fetch tweets through Twitter API, one needs to register an App through their twitter account. Follow these steps for the same:
